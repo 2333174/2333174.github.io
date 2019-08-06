@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tops on SleepyXU.C Blog</title>
+    <link>https://2333174.github.io/top/</link>
+    <description>Recent content in Tops on SleepyXU.C Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://2333174.github.io/top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://2333174.github.io/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/top/about/</guid>
+      <description>Shaw Cai, 武汉大学计算机学院17级本科生，典型无产阶级
+爱好逛B站，看电影刷美剧，娘人杀，王者荣耀(假的)，和平精英（也是假的），运动（还是假的）
+沉迷各种丧尸片、无脑循环所有民谣风古风音乐，欢迎大家向我安利！！！
+*最后一点关于技术，欢迎大家向我推荐好的技术流教程或网站*！！！！</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://2333174.github.io/top/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/top/books/</guid>
+      <description>Machine learning学习笔记 Coursera 在线课程 Machine learning 笔记 讲师: 吴恩达(Andrew Ng)  课程地址：https://www.coursera.org/learn/machine-learning</description>
+    </item>
+    
+  </channel>
+</rss>

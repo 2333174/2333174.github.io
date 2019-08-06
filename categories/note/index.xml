@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NOTE on SleepyXU.C Blog</title>
+    <link>https://2333174.github.io/categories/note/</link>
+    <description>Recent content in NOTE on SleepyXU.C Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Aug 2019 16:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://2333174.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML&amp;&amp;CSS学习笔记(持续更新中)</title>
+      <link>https://2333174.github.io/2019/08/09/note-html-css/</link>
+      <pubDate>Mon, 05 Aug 2019 16:30:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/2019/08/09/note-html-css/</guid>
+      <description>前端简介   结构：HTML用于描述页面的结构
+ 表现：CSS用于控制页面元素的样式
+ 行为：JaveScript用于响应用户操作
+  HTML 基础 注释 &amp;lt;!-- 这是一段注释 功能： 作者： 日期： --&amp;gt;  文档声明 &amp;lt;!-- h5的文档声明，声明当前网页是按照HTML5标准版写的 --&amp;gt; &amp;lt;!doctype html&amp;gt;  乱码问题  中文系统默认编码方式为GB2312 UTF-8编码方式可以适用于各种语言，前端常用编码方式
+ 记事本的编码方式 ： ANSI&amp;ndash;参照系统的自动编码
+ &amp;lt;!doctype html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- 需要告诉浏览器，网页所采用的编码字符集 --&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;/&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;/html&amp;gt;  meta标签用来设置网页的 一些元数据 ，比如网页的字符集，关键字、简介
+  常用标签  标题标签  在HTML 中， 一共有六级标题标签：h1~h6 显示效果上h1最大，h6最小 使用HTML标签时，关心的是标签的语义 6级标签中，h1的最重要，表示一个网页中的主要内容 对于搜索引擎来说，h1的重要性仅次于title,搜索引擎检索完title，会立即查看h1中的内容，页面只能写一个h1  段落标签  换行标签 水平线标签  实体  在HTML中，一些如&amp;lt; &amp;gt;这种特殊字符是不能直接使用的，需要使用一些特殊的符号来表示这些特殊字符，这些特殊符号我们称为实体（转义字符串）</description>
+    </item>
+    
+    <item>
+      <title>Javascript学习笔记</title>
+      <link>https://2333174.github.io/2019/07/08/note-js/</link>
+      <pubDate>Mon, 08 Jul 2019 15:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/2019/07/08/note-js/</guid>
+      <description>Javascript基础 输出语句  alert(s) 弹框
+ document.write(s) 将字符串输出到界面
+ console.log(s) 开发者模式显示日志
+  检查类型 var a=1 console.log(typeof a) //控制台输出: number  数据类型  Number String Boolean null :typeof 为 object undefinied object  对象 基础  类似于python的字典类型
+ 获取属性值的方式
+ object[属性名] object.属性名  检查对象是否含有属性名属性名 in 对象
+  工厂模式创建对象 构造函数 //构造函数 function Person(name,age,gender){ this.name=name; this.age=age; this.gender=gender; } var per= new Person(&amp;quot;张三&amp;quot;，18，&amp;quot;男&amp;quot;)  强制转换  String(a)
+ Number(a)非数字字符串&amp;ndash;&amp;gt;NaNnull&amp;ndash;&amp;gt;0undefined&amp;mdash;&amp;gt;NaNtrue&amp;ndash;&amp;gt;1false&amp;ndash;&amp;gt;0
+ parseInt() 对于非字符串型数据 先转换成字符串true&amp;ndash;&amp;gt;undefined</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="SleepyXU.C Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://2333174.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://2333174.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="HTML&amp;&amp;CSS学习笔记(持续更新中)" />
+    <meta property="og:title" content="HTML&amp;&amp;CSS学习笔记(持续更新中)" />
+    <meta property="twitter:title" content="HTML&amp;&amp;CSS学习笔记(持续更新中)" />
+    
+
+    
+    <meta name="description" content="基于B站教程的HTML和CSS学习笔记">
+    <meta property="og:description" content="基于B站教程的HTML和CSS学习笔记" />
+    <meta property="twitter:description" content="基于B站教程的HTML和CSS学习笔记" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="SleepyXU.C, SleepyXU.C, SleepyXU.C的网络日志, SleepyXU.C的博客, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/img/sleepyxu.ico">
+
+    <title>HTML&amp;&amp;CSS学习笔记(持续更新中)-SleepyXU.C的博客 | SleepyXU.C Blog</title>
+
+    <link rel="canonical" href="/2019/08/09/note-html-css/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">SleepyXU.C Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/note"> note </a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/background/1.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        <a class="tag" href="/tags/css" title="CSS">
+                            CSS
+                        </a>
+                        
+                    </div>
+                    <h1>HTML&amp;&amp;CSS学习笔记(持续更新中)</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            ShawCai
+                         
+                        on 
+                        Monday, August 5, 2019
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#前端简介-br">前端简介 <br/></a></li>
+<li><a href="#html">HTML</a>
+<ul>
+<li><a href="#基础">基础</a>
+<ul>
+<li><a href="#注释">注释</a></li>
+<li><a href="#文档声明">文档声明</a></li>
+<li><a href="#乱码问题">乱码问题</a></li>
+<li><a href="#常用标签">常用标签</a></li>
+<li><a href="#实体">实体</a></li>
+<li><a href="#相对路径">相对路径</a></li>
+<li><a href="#meta标签">meta标签</a></li>
+<li><a href="#超链接a标签">超链接a标签</a></li>
+<li><a href="#块元素和内联元素">块元素和内联元素</a>
+<ul>
+<li><a href="#div标签">div标签</a></li>
+<li><a href="#span标签">span标签</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#css">CSS</a>
+<ul>
+<li><a href="#基础-1">基础</a>
+<ul>
+<li><a href="#使用方式">使用方式</a></li>
+<li><a href="#选择器">选择器</a>
+<ul>
+<li><a href="#标签选择器">标签选择器</a></li>
+<li><a href="#id选择器">id选择器</a></li>
+<li><a href="#类选择器">类选择器</a></li>
+<li><a href="#选择器分组-并集选择器">选择器分组(并集选择器)</a></li>
+<li><a href="#复合选择器-交集选择器">复合选择器(交集选择器)</a></li>
+<li><a href="#后代元素选择器">后代元素选择器</a></li>
+<li><a href="#子元素选择器">子元素选择器</a></li>
+<li><a href="#伪类选择器">伪类选择器</a></li>
+<li><a href="#属性选择器">属性选择器</a></li>
+<li><a href="#伪元素">伪元素</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+                
+                
+
+<h2 id="前端简介-br">前端简介 <br/></h2>
+
+<ol>
+<li><p><strong>结构：</strong>HTML用于描述页面的结构</p></li>
+
+<li><p><strong>表现：</strong>CSS用于控制页面元素的样式</p></li>
+
+<li><p><strong>行为：</strong>JaveScript用于响应用户操作</p></li>
+</ol>
+
+<h2 id="html">HTML</h2>
+
+<h3 id="基础">基础</h3>
+
+<h4 id="注释">注释</h4>
+
+<pre><code class="language-html">&lt;!--
+	这是一段注释
+    功能：
+	作者：
+	日期：
+--&gt;
+</code></pre>
+
+<h4 id="文档声明">文档声明</h4>
+
+<pre><code class="language-html">&lt;!--
+	h5的文档声明，声明当前网页是按照HTML5标准版写的
+--&gt;
+&lt;!doctype html&gt;
+</code></pre>
+
+<h4 id="乱码问题">乱码问题</h4>
+
+<ul>
+<li>中文系统默认编码方式为GB2312</li>
+
+<li><p>UTF-8编码方式可以适用于各种语言，前端常用编码方式</p></li>
+
+<li><p>记事本的编码方式 ： ANSI&ndash;参照系统的自动编码</p></li>
+
+<li><pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;!--
+        需要告诉浏览器，网页所采用的编码字符集
+    --&gt;
+      &lt;meta charset=&quot;UTF-8&quot;/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre></li>
+
+<li><p>meta标签用来设置网页的 一些元数据 ，比如网页的字符集，关键字、简介</p></li>
+</ul>
+
+<h4 id="常用标签">常用标签</h4>
+
+<ol>
+<li>标题标签
+
+<ul>
+<li>在HTML 中， 一共有六级标题标签：h1~h6</li>
+<li>显示效果上h1最大，h6最小</li>
+<li>使用HTML标签时，关心的是标签的语义</li>
+<li>6级标签中，h1的最重要，表示一个网页中的主要内容</li>
+<li>对于搜索引擎来说，h1的重要性仅次于title,搜索引擎检索完title，会立即查看h1中的内容，页面只能写一个h1</li>
+</ul></li>
+<li>段落标签 <p></li>
+<li>换行标签<br/></li>
+<li>水平线标签<hr/></li>
+</ol>
+
+<h4 id="实体">实体</h4>
+
+<ol>
+<li><p><strong>在HTML中，一些如&lt; &gt;这种特殊字符是不能直接使用的，需要使用一些特殊的符号来表示这些特殊字符，这些特殊符号我们称为实体（转义字符串）</strong></p></li>
+
+<li><p>实体的语法：<br/>&amp;实体的名称；</p></li>
+
+<li><p>常用实体：</p>
+
+<ul>
+<li>小于号 &lt;</li>
+<li>大于号 &gt;<br /></li>
+<li>空格 &nbsp;</li>
+</ul></li>
+</ol>
+
+<h4 id="相对路径">相对路径</h4>
+
+<pre><code class="language-html">&lt;!--
+    可以用 ../来返回一级目录，返回积极目录就写几个../
+--&gt;
+&lt;img src=&quot;../../img1.jpg&quot;/&gt; 
+</code></pre>
+
+<h4 id="meta标签">meta标签</h4>
+
+<ul>
+<li><p>使用meta标签设置网页的关键字</p>
+
+<pre><code class="language-html">&lt;meta name=&quot;keywords&quot; content=&quot;HTML5,JS,&quot;/&gt;
+</code></pre></li>
+
+<li><p>可以用来指定网页的描述搜索引擎在检索页面时，会同时检索页面中的关键词和描述</p>
+
+<pre><code class="language-html">&lt;meta name=&quot;description&quot; content=&quot;HTML5教程&quot;/&gt;
+</code></pre></li>
+
+<li><p>使用meta可以用来做请求的重定向</p>
+
+<pre><code class="language-html">&lt;meta http-equiv=&quot;refresh&quot; content=&quot;5;url=http://www.baidu.com&quot;/&gt;
+</code></pre></li>
+
+<li><p>X-UA-Compatible是IE8的一个专有<meta>属性，它告诉IE8采用何种IE版本去渲染网页</p>
+
+<pre><code class="language-html">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="超链接a标签">超链接a标签</h4>
+
+<p><strong>a元素可以包含任意元素，除了自身</strong></p>
+
+<ol>
+<li><p>target属性：a 标签的 target 属性规定在何处打开链接文档。</p>
+
+<ul>
+<li><p>四个特殊目标(后三个不常用)：</p>
+
+<ol>
+<li>_blank      总是在一个新打开、未命名的窗口中载入目标文档。</li>
+<li>_self         默认值,载入并显示在相同的框架或者窗口中</li>
+<li>_present   载入父窗口或者包含来超链接引用的框架的框架集</li>
+<li>_top  文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口</li>
+</ol></li>
+
+<li><p>指定窗口名</p>
+
+<pre><code class="language-html">&lt;html&gt;
+&lt;body&gt;
+     
+&lt;h3&gt;Table of Contents&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/example/html/pref.html&quot; target=&quot;view_window&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/example/html/chap1.html&quot; target=&quot;view_window&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/example/html/chap2.html&quot; target=&quot;view_window&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/example/html/chap3.html&quot; target=&quot;view_window&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+     
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul></li>
+
+<li><p>href属性：用于指定超链接目标的 URL</p>
+
+<ul>
+<li><p>绝对URL： 指向另一个站点</p>
+
+<pre><code class="language-html">&lt;a href=&quot;http://www.example.com/index.htm&quot;/&gt;
+</code></pre></li>
+
+<li><p>相对URL:指向站点内的某个文件</p>
+
+<pre><code class="language-html">&lt;a href=&quot;index.htm&quot;/&gt;
+</code></pre></li>
+
+<li><p>锚URL - 指向页面中的锚（href=&ldquo;#id属性值&rdquo;）</p></li>
+</ul></li>
+</ol>
+
+<h4 id="块元素和内联元素">块元素和内联元素</h4>
+
+<p><strong><em>块元素主要用来做页面中的布局，内联元素主要用来选中文本设置样式</em></strong></p>
+
+<h5 id="div标签">div标签</h5>
+
+<ul>
+<li><strong>div元素是一个块元素，无论内容多少都独占一行</strong></li>
+
+<li><p><strong>自身没有任何语义</strong></p></li>
+
+<li><p><strong>主要用来对页面进行布局</strong></p></li>
+</ul>
+
+<h5 id="span标签">span标签</h5>
+
+<ul>
+<li><strong>span是一个内联元素（行内元素），只占用自身大小</strong></li>
+<li><strong>自身没有任何语义，span标签专门用来选中文字</strong></li>
+</ul>
+
+<h2 id="css">CSS</h2>
+
+<h3 id="基础-1">基础</h3>
+
+<h4 id="使用方式">使用方式</h4>
+
+<ol>
+<li><p>内联样式（不推荐）</p></li>
+
+<li><p>内联样式表</p>
+
+<pre><code class="language-html">&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+    p{
+        color:red;
+        font-size:40px;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre></li>
+
+<li><p>外部样式表</p>
+
+<pre><code class="language-css">/*
+ 这是CSS的注释方式
+*/
+p{
+   color:red;
+   font-size:40px;
+}
+</code></pre>
+
+<pre><code class="language-html">&lt;!--
+将CSS样式统一编写到外部的样式表中，然后通过link标签引入
+--&gt;
+&lt;head&gt;
+   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;/&gt;
+&lt;/head&gt;
+</code></pre></li>
+</ol>
+
+<h4 id="选择器">选择器</h4>
+
+<h5 id="标签选择器">标签选择器</h5>
+
+<ol>
+<li><p>作用：通过元素标签名选中一组元素</p></li>
+
+<li><p>语法：标签名{}</p>
+
+<pre><code class="language-html">&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+    p{
+        color:red;
+        font-size:40px;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre></li>
+</ol>
+
+<h5 id="id选择器">id选择器</h5>
+
+<ol>
+<li><p>作用：通过元素id属性值选中唯一的一个元素</p></li>
+
+<li><p>语法：#id{}</p></li>
+</ol>
+
+<h5 id="类选择器">类选择器</h5>
+
+<ol>
+<li><p>作用：通过元素的class属性值选中一组元素</p></li>
+
+<li><p>语法：.class{}</p></li>
+</ol>
+
+<h5 id="选择器分组-并集选择器">选择器分组(并集选择器)</h5>
+
+<ol>
+<li><p>作用：通过选择器分组可以同时选中多个选择器对应的元素</p></li>
+
+<li><p>语法：选择器1，选择器2，&hellip;，选择器N{}</p></li>
+</ol>
+
+<h5 id="复合选择器-交集选择器">复合选择器(交集选择器)</h5>
+
+<ol>
+<li><p>作用：选中同时满足多个选择器的元素</p></li>
+
+<li><p>语法：选择器1选择器2选择器N{}</p></li>
+</ol>
+
+<h5 id="后代元素选择器">后代元素选择器</h5>
+
+<ol>
+<li><p>作用：选中指定元素的后代元素</p></li>
+
+<li><p>语法：祖先元素 后代元素{}</p></li>
+
+<li><p>注意：注意区分交集选择器和后代选择器</p></li>
+</ol>
+
+<h5 id="子元素选择器">子元素选择器</h5>
+
+<ol>
+<li><p>作用：选中指定父元素的指定子元素</p></li>
+
+<li><p>语法：</p>
+
+<ul>
+<li>父元素 &gt; 子元素{}</li>
+<li>父元素：firstchild{}</li>
+<li>父元素：lastchild{}</li>
+</ul></li>
+</ol>
+
+<h5 id="伪类选择器">伪类选择器</h5>
+
+<ol>
+<li><p>作用：用来表示元素的一种的特殊的状态</p></li>
+
+<li><p>用途：访问过的超链接，普通的超链接，获取焦点的文本框等</p></li>
+
+<li><p>使用：</p>
+
+<ul>
+<li><p>对于a超链接标签</p>
+
+<pre><code class="language-css">/*表示普通的链接*/
+a:link{}
+/*
+-表示访问过的链接
+-由于隐私问题，visited伪类选择器只能设置字体颜色
+*/
+a:visited{}
+/*表示鼠标移入的状态*/
+a:hover{}
+/*表示鼠标点击的状态*/
+a:active{}
+</code></pre></li>
+
+<li><p>对于普通标签(仅支持hover和active伪类)</p>
+
+<pre><code class="language-css">p:hover{}
+p:active{}
+</code></pre></li>
+
+<li><p>其他伪类</p>
+
+<pre><code class="language-css">/*文本框获取焦点后样式*/
+input:focus{}
+/*选中文本内容样式*/
+p::selection{}
+</code></pre></li>
+</ul></li>
+</ol>
+
+<h5 id="属性选择器">属性选择器</h5>
+
+<ol>
+<li>作用：可以根据元素中的属性或属性值来选取指定元素</li>
+<li>语法：
+
+<ul>
+<li>[属性名] 选取具有指定属性的元素</li>
+<li>[属性名=属性值] 选取属性等于指定属性值的元素</li>
+<li>[属性名^=”属性值“] 选取属性值以指定内容开头的元素</li>
+<li>[属性名$=“属性值”] 选取属性值以指定内容结尾的元素</li>
+</ul></li>
+</ol>
+
+<h5 id="伪元素">伪元素</h5>
+
+<ol>
+<li><p>段落首字母</p>
+
+<pre><code class="language-css">p:first-letter{}
+</code></pre></li>
+
+<li><p>段落首行</p>
+
+<pre><code class="language-css">p:first-line{}
+</code></pre></li>
+</ol>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://2333174.github.io"><img src="/img/sleepyxu.png" />SleepyXU.C Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/07/08/note-js/" data-toggle="tooltip" data-placement="top" title="Javascript学习笔记">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/css" title="css">
+                            css
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/html" title="html">
+                            html
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="SleepyXU.C Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:caixu.cx@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/2333174">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; SleepyXU.C Blog 2019
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
