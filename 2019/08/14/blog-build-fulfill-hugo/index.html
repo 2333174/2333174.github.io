@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="Git与GitHub学习笔记" />
-    <meta property="og:title" content="Git与GitHub学习笔记" />
-    <meta property="twitter:title" content="Git与GitHub学习笔记" />
+    <meta name="title" content="个人博客搭建指南 实战篇（一）" />
+    <meta property="og:title" content="个人博客搭建指南 实战篇（一）" />
+    <meta property="twitter:title" content="个人博客搭建指南 实战篇（一）" />
     
 
     
-    <meta name="description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记">
-    <meta property="og:description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记" />
-    <meta property="twitter:description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记" />
+    <meta name="description" content="使用Hugo搭建个人博客--https://www.youtube.com/watch?v=J7XQ2FeTHLg">
+    <meta property="og:description" content="使用Hugo搭建个人博客--https://www.youtube.com/watch?v=J7XQ2FeTHLg" />
+    <meta property="twitter:description" content="使用Hugo搭建个人博客--https://www.youtube.com/watch?v=J7XQ2FeTHLg" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="SleepyXU.C, SleepyXU.C, SleepyXU.C的网络日志, SleepyXU.C的博客, 博客, 个人网站, 互联网">
     <link rel="shortcut icon" href="/img/sleepyxu.ico">
 
-    <title>Git与GitHub学习笔记-SleepyXU.C的博客 | SleepyXU.C Blog</title>
+    <title>个人博客搭建指南 实战篇（一）-SleepyXU.C的博客 | SleepyXU.C Blog</title>
 
-    <link rel="canonical" href="/2019/08/17/git-note/">
+    <link rel="canonical" href="/2019/08/14/blog-build-fulfill-Hugo/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -161,7 +161,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/background/27.png')
+        background-image: url('/img/background/25.png')
     }
 </style>
 <header class="intro-header">
@@ -171,12 +171,12 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/git" title="git">
-                            git
+                        <a class="tag" href="/tags/blog" title="blog">
+                            blog
                         </a>
                         
                     </div>
-                    <h1>Git与GitHub学习笔记</h1>
+                    <h1>个人博客搭建指南 实战篇（一）</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -184,7 +184,7 @@
                             Shaw Cai
                          
                         on 
-                        Saturday, August 17, 2019
+                        Wednesday, August 14, 2019
                         
                         
                         
@@ -216,37 +216,17 @@
 <ul>
 <li>
 <ul>
-<li><a href="#基本概念">基本概念</a>
+<li><a href="#本地搭建步骤">本地搭建步骤</a>
 <ul>
-<li><a href="#github">Github</a>
+<li><a href="#安装hugo">安装Hugo</a></li>
+<li><a href="#用命令创建博客">用命令创建博客</a></li>
+<li><a href="#下载并安装主题">下载并安装主题</a></li>
+<li><a href="#在本地启动个人博客">在本地启动个人博客</a></li>
+<li><a href="#将个人博客部署到远端">将个人博客部署到远端</a>
 <ul>
-<li><a href="#仓库-repository">仓库（Repository）</a></li>
-<li><a href="#收藏-star">收藏（Star）</a></li>
-<li><a href="#复制克隆项目-fork">复制克隆项目（Fork）</a></li>
-<li><a href="#发送请求-pull-request">发送请求（Pull Request）</a></li>
-<li><a href="#关注-watch">关注（Watch)</a></li>
-<li><a href="#事务卡片-issue">事务卡片（Issue）</a></li>
+<li><a href="#部署到github-pages">部署到GitHub Pages</a></li>
+<li><a href="#部署到远端服务器">部署到远端服务器</a></li>
 </ul></li>
-<li><a href="#git与github的关系">Git与Github的关系</a></li>
-</ul></li>
-<li><a href="#仓库管理工具-版本控制工具">仓库管理工具(版本控制工具)</a>
-<ul>
-<li><a href="#git">Git</a>
-<ul>
-<li><a href="#介绍">介绍</a></li>
-<li><a href="#常用操作">常用操作</a>
-<ul>
-<li><a href="#本地仓库操作">本地仓库操作</a></li>
-<li><a href="#远程仓库操作">远程仓库操作</a></li>
-<li><a href="#具体教程">具体教程</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#github-desktop">Github Desktop</a></li>
-</ul></li>
-<li><a href="#github-pages搭建网站">Github Pages搭建网站</a>
-<ul>
-<li><a href="#搭建步骤">搭建步骤</a></li>
-<li><a href="#注意">注意</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -254,199 +234,78 @@
                 
                 
 
-<h2 id="基本概念">基本概念</h2>
+<h2 id="本地搭建步骤">本地搭建步骤</h2>
 
-<h3 id="github">Github</h3>
+<h3 id="安装hugo">安装Hugo</h3>
 
-<h4 id="仓库-repository">仓库（Repository）</h4>
+<p>hugo下载地址：<a href="https://github.com/gohugoio/hugo/releases" target="_blank">戳这里</a>（根据系统下载）</p>
 
-<p>仓库用来存放项目代码，每个项目对应一个仓库，多个项目对应多个仓库。</p>
+<h3 id="用命令创建博客">用命令创建博客</h3>
 
-<h4 id="收藏-star">收藏（Star）</h4>
+<pre><code>hugo new site 文件名
+</code></pre>
 
-<p>收藏项目，方便下次查看</p>
-
-<h4 id="复制克隆项目-fork">复制克隆项目（Fork）</h4>
-
-<p>为当前用户复制出一个<strong>独立</strong>的相同内容的仓库</p>
-
-<h4 id="发送请求-pull-request">发送请求（Pull Request）</h4>
-
-<p>基于fork的项目，将你的更改上传，等待项目变更者的审核以及合并分支</p>
-
-<h4 id="关注-watch">关注（Watch)</h4>
-
-<p>关注项目，当项目更新可以接收到通知</p>
-
-<h4 id="事务卡片-issue">事务卡片（Issue）</h4>
-
-<p>发现代码Bug,但是目前没有成型代码，需要讨论时用</p>
-
-<h3 id="git与github的关系">Git与Github的关系</h3>
-
-<p>Git是一款免费、开源的<strong>分布式版本控制系统</strong>；Github是用Git做版本控制的<strong>代码托管平台</strong></p>
-
-<h2 id="仓库管理工具-版本控制工具">仓库管理工具(版本控制工具)</h2>
-
-<h3 id="git">Git</h3>
-
-<h4 id="介绍">介绍</h4>
+<h3 id="下载并安装主题">下载并安装主题</h3>
 
 <ol>
-<li>原生态命令行工具</li>
-<li>下载地址：<a href="https://git-scm.com/download/" target="_">戳这里</a></li>
-<li>Git记录的是项目的每个版本</li>
-</ol>
+<li><p>主题列表：<a href="https://themes.gohugo.io/" target="_blank">戳这里</a></p></li>
 
-<h4 id="常用操作">常用操作</h4>
+<li><p>进入themes目录<img src="/img/blog/1.png" alt="themes" /></p></li>
 
-<h5 id="本地仓库操作">本地仓库操作</h5>
-
-<ol>
-<li><p>Git工作区域</p>
+<li><p>下载主题</p>
 
 <ul>
-<li>工作区：编辑文件</li>
-<li>暂存区：暂存已经修改的文件，最后统一提交到git仓库</li>
-<li>git仓库：最终确定的文件保存到本地仓库</li>
-</ul></li>
+<li><p>如果电脑安装配置好git了，直接在当前目录键入命令</p>
 
-<li><p>文件的状态</p>
-
-<ul>
-<li>已修改(modified)</li>
-<li>已暂存(staged)</li>
-<li>已提交(committed)</li>
-</ul></li>
-
-<li><p>向仓库中添加文件流程</p>
-
-<pre><code class="language-bash">git init   //初始化本地仓库
-git status //查看文件的状态
-git add 文件名 //将文件提交至暂存区
-git commit -m &quot;提交描述&quot;
+<pre><code class="language-bash">git clone 项目地址
 </code></pre></li>
 
-<li><p>查看历史提交<img src="/img/git/1.png" alt="命令行图片" /></p>
-
-<pre><code class="language-powershell">git log
-git reflog   //cmd被关闭了,查看历史
-</code></pre></li>
-
-<li><p>版本回退</p>
-
-<pre><code class="language-bash">git reset HEAD~n    //n为向前回退版本数
-git reset 版本号    //进入特定的版本
-</code></pre></li>
-
-<li><p>版本比较</p>
-
-<ul>
-<li><p>比较暂存区域与工作区域</p>
-
-<pre><code class="language-bash">git diff
-</code></pre></li>
-
-<li><p>比较两个历史版本</p>
-
-<pre><code class="language-bash">git diff 第一个版本号 第二个版本号
-</code></pre></li>
-
-<li><p>版本比较总结<img src="/img/git/2.png" alt="版本比较总结" /></p></li>
-</ul></li>
-
-<li><p>更改commit提交说明</p>
-
-<pre><code class="language-bash">git commit --amend -m &quot;新的说明&quot;
-</code></pre></li>
-
-<li><p>删除文件</p>
-
-<ul>
-<li><p>删除工作目录和暂存区的文件</p>
-
-<pre><code class="language-bash">git rm 文件名
-</code></pre></li>
-
-<li><p>工作区和暂存区同一文件名内容不同时，删除这两个文件</p>
-
-<pre><code class="language-bash">git rm -f 文件名
-</code></pre></li>
-
-<li><p>只删除暂存区文件</p>
-
-<pre><code class="language-bash">git rm --cached 文件名 
-</code></pre></li>
-</ul></li>
-
-<li><p>重命名</p>
-
-<pre><code class="language-bash">git mv 旧文件名 新文件名
-</code></pre></li>
-
-<li><p>分支管理</p>
-
-<ul>
-<li><p>创建分支</p>
-
-<pre><code class="language-bash">git branch 新分支名
-</code></pre></li>
-
-<li><p>切换分支</p>
-
-<pre><code class="language-bash">git checkout 分支名
-</code></pre></li>
-
-<li><p>合并分支(与主分支合并)</p>
-
-<pre><code class="language-bash">git merge 分支名
-</code></pre></li>
-
-<li><p>注意：合并分支可能会出现冲突。<br/>解决冲突：建议用VS Code打开冲突文件，进行取舍</p></li>
+<li><p>若没有配置git,直接在主题的Github地址下载ZIP压缩包，移动至当前目录解压.(后面部署网站还是需要GitHub，git教程：<a href="/2019/08/17/git-note/" target="_">Git与GitHub学习笔记</a>)</p></li>
 </ul></li>
 </ol>
 
-<h5 id="远程仓库操作">远程仓库操作</h5>
+<h3 id="在本地启动个人博客">在本地启动个人博客</h3>
 
 <ol>
-<li><p>克隆远程库项目</p>
+<li><p>键入命令：</p>
 
-<pre><code class="language-bash">git clone 远程库地址
+<pre><code class="language-powershell">hugo server -t 主题名称 
 </code></pre></li>
 
-<li><p>上传至远程库&ndash;本地仓库commit后：</p>
+<li><p>访问<a href="http://localhost:1313">http://localhost:1313</a>, 若访问成功即配置完成</p></li>
 
-<pre><code class="language-bash">git push -u origin master
+<li><p>写博客<br/>在<strong><em>主题文件夹/content/post/</em></strong>文件夹内添加博客文本文件（*.md文件）即可</p></li>
+</ol>
+
+<h3 id="将个人博客部署到远端">将个人博客部署到远端</h3>
+
+<h4 id="部署到github-pages">部署到GitHub Pages</h4>
+
+<ol>
+<li><p>新建仓库&ndash; 用户名.github.io</p></li>
+
+<li><p>键入命令</p>
+
+<pre><code class="language-powershell">hugo --theme=主题名 --baseURl=&quot;https://用户名.github.io&quot; --buildDrafts
 </code></pre></li>
+
+<li><p>执行命令后会生成一个public文件夹<img src="/img/blog/2.png" alt="public" /></p></li>
+
+<li><p>将public文件夹中的内容上传到刚刚创建的仓库中,键入命令</p>
+
+<pre><code class="language-bash">git init
+git add *
+git commit -m &quot;第一次创建博客&quot;
+git remote add origin https://github.com/用户名/用户名.github.io.git
+git push -u origin master
+</code></pre></li>
+
+<li><p>访问 http://用户名.github.io ,完事！！！</p></li>
 </ol>
 
-<h5 id="具体教程">具体教程</h5>
+<h4 id="部署到远端服务器">部署到远端服务器</h4>
 
-<p>教程地址：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_">廖雪峰Git教程</a></p>
-
-<h3 id="github-desktop">Github Desktop</h3>
-
-<ol>
-<li>可视化应用程序，无需进行命令行操作</li>
-<li>下载地址：<a href="https://desktop.github.com/" target="_blank">戳这里</a></li>
-</ol>
-
-<h2 id="github-pages搭建网站">Github Pages搭建网站</h2>
-
-<h3 id="搭建步骤">搭建步骤</h3>
-
-<ol>
-<li>创建个人站点:<br/>新建仓库（仓库名必须是  <strong>用户名.github.io</strong>  ）</li>
-<li>在仓库下创建网站页面</li>
-<li>访问 <em>http:// 用户名.github.io</em>  即可</li>
-</ol>
-
-<h3 id="注意">注意</h3>
-
-<ol>
-<li>GitHub Pages 仅支持静态网页</li>
-<li>http:// 用户名.github.io访问的是在用户名.github.io仓库中存放的html文件</li>
-</ol>
+<p>(哦豁，埋个坑)</p>
 
 
                 
@@ -495,10 +354,15 @@ git reset 版本号    //进入特定的版本
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2019/08/14/blog-build-fulfill-Hugo/" data-toggle="tooltip" data-placement="top" title="个人博客搭建指南 实战篇（一）">&larr;
+                        <a href="/2019/08/11/blog-build-introduction/" data-toggle="tooltip" data-placement="top" title="个人博客搭建指南 介绍篇">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2019/08/17/git-note/" data-toggle="tooltip" data-placement="top" title="Git与GitHub学习笔记">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
 

@@ -33,11 +33,11 @@ git reset HEAD~n //n为向前回退版本数 git reset 版本号 //进入特定�
     
     <item>
       <title>个人博客搭建指南 实战篇（一）</title>
-      <link>https://2333174.github.io/2019/08/11/blog-build-fulfill-hugo/</link>
+      <link>https://2333174.github.io/2019/08/14/blog-build-fulfill-hugo/</link>
       <pubDate>Wed, 14 Aug 2019 22:30:00 +0000</pubDate>
       
-      <guid>https://2333174.github.io/2019/08/11/blog-build-fulfill-hugo/</guid>
-      <description> 本地搭建步骤 安装Hugo hugo下载地址：戳这里（根据系统下载）
+      <guid>https://2333174.github.io/2019/08/14/blog-build-fulfill-hugo/</guid>
+      <description>本地搭建步骤 安装Hugo hugo下载地址：戳这里（根据系统下载）
 用命令创建博客 hugo new site 文件名  下载并安装主题  主题列表：戳这里
  进入themes目录 下载主题
  如果电脑安装配置好git了，直接在当前目录键入命令
@@ -45,7 +45,10 @@ git clone 项目地址  若没有配置git,直接在主题的Github地址下载Z
    在本地启动个人博客  键入命令：
 hugo server -t 主题名称  访问http://localhost:1313, 若访问成功即配置完成
  写博客在主题文件夹/content/post/文件夹内添加博客文本文件（*.md文件）即可
-  将个人博客部署到远端 部署到GitHub Pages </description>
+  将个人博客部署到远端 部署到GitHub Pages  新建仓库&amp;ndash; 用户名.github.io
+ 键入命令
+hugo --theme=主题名 --baseURl=&amp;quot;https://用户名.github.io&amp;quot; --buildDrafts  执行命令后会生成一个public文件夹 将public文件夹中的内容上传到刚刚创建的仓库中,键入命令
+git init git add * git commit -m &amp;quot;第一次创建博客&amp;quot; git remote add origin https://github.com/用户名/用户名.github.io.git git push -u origin master  访问 http://用户名.</description>
     </item>
     
     <item>
