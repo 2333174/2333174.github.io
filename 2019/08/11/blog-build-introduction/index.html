@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="SleepyXU.C Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://2333174.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://2333174.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="个人博客搭建指南 介绍篇" />
+    <meta property="og:title" content="个人博客搭建指南 介绍篇" />
+    <meta property="twitter:title" content="个人博客搭建指南 介绍篇" />
+    
+
+    
+    <meta name="description" content="初步介绍几种快速搭建个人博客的框架">
+    <meta property="og:description" content="初步介绍几种快速搭建个人博客的框架" />
+    <meta property="twitter:description" content="初步介绍几种快速搭建个人博客的框架" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="SleepyXU.C, SleepyXU.C, SleepyXU.C的网络日志, SleepyXU.C的博客, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/img/sleepyxu.ico">
+
+    <title>个人博客搭建指南 介绍篇-SleepyXU.C的博客 | SleepyXU.C Blog</title>
+
+    <link rel="canonical" href="/2019/08/11/blog-build-introduction/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">SleepyXU.C Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/note"> note </a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/plan/">PLAN</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/background/19.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/blog" title="blog">
+                            blog
+                        </a>
+                        
+                    </div>
+                    <h1>个人博客搭建指南 介绍篇</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Shaw Cai
+                         
+                        on 
+                        Sunday, August 11, 2019
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#引言">引言</a>
+<ul>
+<li><a href="#为什么要搭建个人博客">为什么要搭建个人博客</a></li>
+</ul></li>
+<li><a href="#介绍">介绍</a>
+<ul>
+<li><a href="#常用博客搭建框架">常用博客搭建框架</a>
+<ul>
+<li><a href="#wordpress">WordPress</a></li>
+<li><a href="#hexo-推荐">Hexo(推荐)</a></li>
+<li><a href="#hugo-推荐">Hugo(推荐)</a></li>
+<li><a href="#jekyllrb">jekyllrb</a></li>
+<li><a href="#vuepress">VuePress</a></li>
+<li><a href="#solo">Solo</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+</ul>
+</nav>
+                
+                
+
+<h2 id="引言">引言</h2>
+
+<h3 id="为什么要搭建个人博客">为什么要搭建个人博客</h3>
+
+<ol>
+<li>有利于帮助自己思考，加深对技术的理解，在写博客的过程中提升技术使用熟练度。</li>
+<li>提高自己的表达能力、归纳总结能力</li>
+<li>（工作简历加分项）</li>
+</ol>
+
+<h2 id="介绍">介绍</h2>
+
+<h3 id="常用博客搭建框架">常用博客搭建框架</h3>
+
+<p>根据搭建的博客是否有后台管理系统，将博客框架分为<strong>动态</strong>和<strong>静态</strong>两种。 实现一般的个人博客展示，搭建一个静态博客站点即可—— 首先<strong>相对轻量</strong>，其次<strong>有利于自己动手DIY</strong>。</p>
+
+<p>这些博客搭建平台，博主并没有一一实践过，所以只做<strong>粗略的介绍</strong>，感兴趣可以自己查看官网。</p>
+
+<h4 id="wordpress">WordPress</h4>
+
+<p>著名的动态博客搭建平台，搭建出的博客具有强大的后台管理系统，方便管理自己的博客。特点：↓↓↓</p>
+
+<blockquote>
+<p>入门使用成本低、但是定制的学习成本高（PHP大神除外）；对于MarkDown编辑的支持不行，虽然有插件，但是功能太弱。<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+</blockquote>
+
+<p>官网：<a href="https://codex.wordpress.org/" target="_blank">戳这里</a></p>
+
+<h4 id="hexo-推荐">Hexo(推荐)</h4>
+
+<p>静态博客搭建平台之一，基于Node.js。<a href="https://hexo.io/zh-cn/" target="_blank">Hexo官网</a>上说的几个特点：</p>
+
+<blockquote>
+<ul>
+<li>超快速度，渲染快</li>
+<li>支持Markdown</li>
+<li>一键部署</li>
+<li>丰富的插件</li>
+</ul>
+</blockquote>
+
+<p>等我尝试后再具体说说搭建的体验。(未来网的博客准备用Hexo搭建，这里埋个坑)。</p>
+
+<h4 id="hugo-推荐">Hugo(推荐)</h4>
+
+<p>基于go语言实现的静态博客搭建平台，当前博客就是基于hugo搭建的，部署和DIY都比较简单，但是大致看了一下目前<a href="https://www.gohugo.org/" target="_blank">Hugo官网</a>上的主题没有hexo多。个人体验，用官网的话来说：</p>
+
+<blockquote>
+<p>简单、易用、高效、易扩展、快速部署</p>
+</blockquote>
+
+<h4 id="jekyllrb">jekyllrb</h4>
+
+<p>基于Ruby环境的静态博客搭建平台，官网：<a href="https://jekyllrb.com/" target="_blank">戳这里</a></p>
+
+<h4 id="vuepress">VuePress</h4>
+
+<p>新出的相对冷门的静态博客搭建平台，基于vue.js框架<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>。官网：<a href="https://vuepress.vuejs.org/" target="_blank">VuePress官网</a></p>
+
+<h4 id="solo">Solo</h4>
+
+<p>Java博客系统，官网：<a href="https://solo.b3log.org/" target="_blank">戳这里</a></p>
+
+<h2 id="参考资料">参考资料</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="http://blog.didispace.com/blog-tools-1/" target="_blank">博客搭建攻略(一)：平台选择</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2"><a href="https://www.youtube.com/watch?v=cNXTw_UoVsI" target="_blank">YouTube:程序猿如何搭建一个属于自己的博客</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://2333174.github.io"><img src="/img/sleepyxu.png" />SleepyXU.C Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/09/ssr-Try/" data-toggle="tooltip" data-placement="top" title="爱国上网指北之酸酸乳(待更新)">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/08/11/blog-build-fulfill-Hugo/" data-toggle="tooltip" data-placement="top" title="个人博客搭建指南 实战篇（一）">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/blog" title="blog">
+                            blog
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/css" title="css">
+                            css
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/git" title="git">
+                            git
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/html" title="html">
+                            html
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ss/ssr" title="ss/ssr">
+                            ss/ssr
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="SleepyXU.C Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:caixu.cx@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/2333174">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; SleepyXU.C Blog 2019
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

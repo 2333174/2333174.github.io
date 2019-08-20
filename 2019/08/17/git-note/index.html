@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="SleepyXU.C Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://2333174.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://2333174.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="Git与GitHub学习笔记" />
+    <meta property="og:title" content="Git与GitHub学习笔记" />
+    <meta property="twitter:title" content="Git与GitHub学习笔记" />
+    
+
+    
+    <meta name="description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记">
+    <meta property="og:description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记" />
+    <meta property="twitter:description" content="基于b站av10475153(学会Git玩转Github)与av8261658(Git实用教程--小甲鱼)视频de学习笔记" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="SleepyXU.C, SleepyXU.C, SleepyXU.C的网络日志, SleepyXU.C的博客, 博客, 个人网站, 互联网">
+    <link rel="shortcut icon" href="/img/sleepyxu.ico">
+
+    <title>Git与GitHub学习笔记-SleepyXU.C的博客 | SleepyXU.C Blog</title>
+
+    <link rel="canonical" href="/2019/08/17/git-note/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">SleepyXU.C Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/note"> note </a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/plan/">PLAN</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/background/27.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/git" title="git">
+                            git
+                        </a>
+                        
+                    </div>
+                    <h1>Git与GitHub学习笔记</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Shaw Cai
+                         
+                        on 
+                        Saturday, August 17, 2019
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#基本概念">基本概念</a>
+<ul>
+<li><a href="#github">Github</a>
+<ul>
+<li><a href="#仓库-repository">仓库（Repository）</a></li>
+<li><a href="#收藏-star">收藏（Star）</a></li>
+<li><a href="#复制克隆项目-fork">复制克隆项目（Fork）</a></li>
+<li><a href="#发送请求-pull-request">发送请求（Pull Request）</a></li>
+<li><a href="#关注-watch">关注（Watch)</a></li>
+<li><a href="#事务卡片-issue">事务卡片（Issue）</a></li>
+</ul></li>
+<li><a href="#git与github的关系">Git与Github的关系</a></li>
+</ul></li>
+<li><a href="#仓库管理工具-版本控制工具">仓库管理工具(版本控制工具)</a>
+<ul>
+<li><a href="#git">Git</a>
+<ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#常用操作">常用操作</a>
+<ul>
+<li><a href="#本地仓库操作">本地仓库操作</a></li>
+<li><a href="#远程仓库操作">远程仓库操作</a></li>
+<li><a href="#具体教程">具体教程</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#github-desktop">Github Desktop</a></li>
+</ul></li>
+<li><a href="#github-pages搭建网站">Github Pages搭建网站</a>
+<ul>
+<li><a href="#搭建步骤">搭建步骤</a></li>
+<li><a href="#注意">注意</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+                
+                
+
+<h2 id="基本概念">基本概念</h2>
+
+<h3 id="github">Github</h3>
+
+<h4 id="仓库-repository">仓库（Repository）</h4>
+
+<p>仓库用来存放项目代码，每个项目对应一个仓库，多个项目对应多个仓库。</p>
+
+<h4 id="收藏-star">收藏（Star）</h4>
+
+<p>收藏项目，方便下次查看</p>
+
+<h4 id="复制克隆项目-fork">复制克隆项目（Fork）</h4>
+
+<p>为当前用户复制出一个<strong>独立</strong>的相同内容的仓库</p>
+
+<h4 id="发送请求-pull-request">发送请求（Pull Request）</h4>
+
+<p>基于fork的项目，将你的更改上传，等待项目变更者的审核以及合并分支</p>
+
+<h4 id="关注-watch">关注（Watch)</h4>
+
+<p>关注项目，当项目更新可以接收到通知</p>
+
+<h4 id="事务卡片-issue">事务卡片（Issue）</h4>
+
+<p>发现代码Bug,但是目前没有成型代码，需要讨论时用</p>
+
+<h3 id="git与github的关系">Git与Github的关系</h3>
+
+<p>Git是一款免费、开源的<strong>分布式版本控制系统</strong>；Github是用Git做版本控制的<strong>代码托管平台</strong></p>
+
+<h2 id="仓库管理工具-版本控制工具">仓库管理工具(版本控制工具)</h2>
+
+<h3 id="git">Git</h3>
+
+<h4 id="介绍">介绍</h4>
+
+<ol>
+<li>原生态命令行工具</li>
+<li>下载地址：<a href="https://git-scm.com/download/" target="_">戳这里</a></li>
+<li>Git记录的是项目的每个版本</li>
+</ol>
+
+<h4 id="常用操作">常用操作</h4>
+
+<h5 id="本地仓库操作">本地仓库操作</h5>
+
+<ol>
+<li><p>Git工作区域</p>
+
+<ul>
+<li>工作区：编辑文件</li>
+<li>暂存区：暂存已经修改的文件，最后统一提交到git仓库</li>
+<li>git仓库：最终确定的文件保存到本地仓库</li>
+</ul></li>
+
+<li><p>文件的状态</p>
+
+<ul>
+<li>已修改(modified)</li>
+<li>已暂存(staged)</li>
+<li>已提交(committed)</li>
+</ul></li>
+
+<li><p>向仓库中添加文件流程</p>
+
+<pre><code class="language-bash">git init   //初始化本地仓库
+git status //查看文件的状态
+git add 文件名 //将文件提交至暂存区
+git commit -m &quot;提交描述&quot;
+</code></pre></li>
+
+<li><p>查看历史提交<img src="/img/git/1.png" alt="命令行图片" /></p>
+
+<pre><code class="language-powershell">git log
+git reflog   //cmd被关闭了,查看历史
+</code></pre></li>
+
+<li><p>版本回退</p>
+
+<pre><code class="language-bash">git reset HEAD~n    //n为向前回退版本数
+git reset 版本号    //进入特定的版本
+</code></pre></li>
+
+<li><p>版本比较</p>
+
+<ul>
+<li><p>比较暂存区域与工作区域</p>
+
+<pre><code class="language-bash">git diff
+</code></pre></li>
+
+<li><p>比较两个历史版本</p>
+
+<pre><code class="language-bash">git diff 第一个版本号 第二个版本号
+</code></pre></li>
+
+<li><p>版本比较总结<img src="/img/git/2.png" alt="版本比较总结" /></p></li>
+</ul></li>
+
+<li><p>更改commit提交说明</p>
+
+<pre><code class="language-bash">git commit --amend -m &quot;新的说明&quot;
+</code></pre></li>
+
+<li><p>删除文件</p>
+
+<ul>
+<li><p>删除工作目录和暂存区的文件</p>
+
+<pre><code class="language-bash">git rm 文件名
+</code></pre></li>
+
+<li><p>工作区和暂存区同一文件名内容不同时，删除这两个文件</p>
+
+<pre><code class="language-bash">git rm -f 文件名
+</code></pre></li>
+
+<li><p>只删除暂存区文件</p>
+
+<pre><code class="language-bash">git rm --cached 文件名 
+</code></pre></li>
+</ul></li>
+
+<li><p>重命名</p>
+
+<pre><code class="language-bash">git mv 旧文件名 新文件名
+</code></pre></li>
+
+<li><p>分支管理</p>
+
+<ul>
+<li><p>创建分支</p>
+
+<pre><code class="language-bash">git branch 新分支名
+</code></pre></li>
+
+<li><p>切换分支</p>
+
+<pre><code class="language-bash">git checkout 分支名
+</code></pre></li>
+
+<li><p>合并分支(与主分支合并)</p>
+
+<pre><code class="language-bash">git merge 分支名
+</code></pre></li>
+
+<li><p>注意：合并分支可能会出现冲突。<br/>解决冲突：建议用VS Code打开冲突文件，进行取舍</p></li>
+</ul></li>
+</ol>
+
+<h5 id="远程仓库操作">远程仓库操作</h5>
+
+<ol>
+<li><p>克隆远程库项目</p>
+
+<pre><code class="language-bash">git clone 远程库地址
+</code></pre></li>
+
+<li><p>上传至远程库&ndash;本地仓库commit后：</p>
+
+<pre><code class="language-bash">git push -u origin master
+</code></pre></li>
+</ol>
+
+<h5 id="具体教程">具体教程</h5>
+
+<p>教程地址：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_">廖雪峰Git教程</a></p>
+
+<h3 id="github-desktop">Github Desktop</h3>
+
+<ol>
+<li>可视化应用程序，无需进行命令行操作</li>
+<li>下载地址：<a href="https://desktop.github.com/" target="_blank">戳这里</a></li>
+</ol>
+
+<h2 id="github-pages搭建网站">Github Pages搭建网站</h2>
+
+<h3 id="搭建步骤">搭建步骤</h3>
+
+<ol>
+<li>创建个人站点:<br/>新建仓库（仓库名必须是  <strong>用户名.github.io</strong>  ）</li>
+<li>在仓库下创建网站页面</li>
+<li>访问 <em>http:// 用户名.github.io</em>  即可</li>
+</ol>
+
+<h3 id="注意">注意</h3>
+
+<ol>
+<li>GitHub Pages 仅支持静态网页</li>
+<li>http:// 用户名.github.io访问的是在用户名.github.io仓库中存放的html文件</li>
+</ol>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://2333174.github.io"><img src="/img/sleepyxu.png" />SleepyXU.C Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/11/blog-build-fulfill-Hugo/" data-toggle="tooltip" data-placement="top" title="个人博客搭建指南 实战篇（一）">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/blog" title="blog">
+                            blog
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/css" title="css">
+                            css
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/git" title="git">
+                            git
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/html" title="html">
+                            html
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ss/ssr" title="ss/ssr">
+                            ss/ssr
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="SleepyXU.C Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:caixu.cx@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/2333174">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; SleepyXU.C Blog 2019
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

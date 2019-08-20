@@ -6,10 +6,37 @@
     <description>Recent content in Tags on SleepyXU.C Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 14:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://2333174.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://2333174.github.io/tags/git/</link>
+      <pubDate>Sat, 17 Aug 2019 14:30:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://2333174.github.io/tags/blog/</link>
+      <pubDate>Wed, 14 Aug 2019 22:30:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SS/SSR</title>
+      <link>https://2333174.github.io/tags/ss/ssr/</link>
+      <pubDate>Fri, 09 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/tags/ss/ssr/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CSS</title>

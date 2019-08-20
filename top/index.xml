@@ -19,7 +19,7 @@
       <description>Shaw Cai, 武汉大学计算机学院17级本科生，典型无产阶级
 爱好逛B站，看电影刷美剧，娘人杀，王者荣耀(假的)，和平精英（也是假的），运动（还是假的）
 沉迷各种丧尸片、无脑循环所有民谣风古风音乐，欢迎大家向我安利！！！
-*最后一点关于技术，欢迎大家向我推荐好的技术流教程或网站*！！！！</description>
+最后一点关于技术，欢迎大家向我推荐好的技术流教程或网站！！！！</description>
     </item>
     
     <item>
@@ -29,6 +29,18 @@
       
       <guid>https://2333174.github.io/top/books/</guid>
       <description>Machine learning学习笔记 Coursera 在线课程 Machine learning 笔记 讲师: 吴恩达(Andrew Ng)  课程地址：https://www.coursera.org/learn/machine-learning</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://2333174.github.io/top/plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/top/plan/</guid>
+      <description> 博客定位  存放个人学习笔记 记录个人生活 存放未来网技术组的工作安排和周志  博客分栏安排  NOTE：存放个人学习笔记
+ LIFE：记录个人生活
+ FUTURE：记录未来网工作
+  近期工作安排 HTML/CSS博客 更新 关于个人博客搭建文章 编写 尝试用新方法建立一个单独为未来网准备的博客 多看看书，尝试写一些关于生活的博客 酸酸乳服务器搭建填坑  </description>
     </item>
     
   </channel>

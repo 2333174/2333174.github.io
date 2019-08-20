@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on SleepyXU.C Blog</title>
+    <link>https://2333174.github.io/tags/blog/</link>
+    <description>Recent content in blog on SleepyXU.C Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2019 22:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://2333174.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>个人博客搭建指南 实战篇（一）</title>
+      <link>https://2333174.github.io/2019/08/11/blog-build-fulfill-hugo/</link>
+      <pubDate>Wed, 14 Aug 2019 22:30:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/2019/08/11/blog-build-fulfill-hugo/</guid>
+      <description> 本地搭建步骤 安装Hugo hugo下载地址：戳这里（根据系统下载）
+用命令创建博客 hugo new site 文件名  下载并安装主题  主题列表：戳这里
+ 进入themes目录 下载主题
+ 如果电脑安装配置好git了，直接在当前目录键入命令
+git clone 项目地址  若没有配置git,直接在主题的Github地址下载ZIP压缩包，移动至当前目录解压.(后面部署网站还是需要GitHub，git教程：Git与GitHub学习笔记)
+   在本地启动个人博客  键入命令：
+hugo server -t 主题名称  访问http://localhost:1313, 若访问成功即配置完成
+ 写博客在主题文件夹/content/post/文件夹内添加博客文本文件（*.md文件）即可
+  将个人博客部署到远端 部署到GitHub Pages </description>
+    </item>
+    
+    <item>
+      <title>个人博客搭建指南 介绍篇</title>
+      <link>https://2333174.github.io/2019/08/11/blog-build-introduction/</link>
+      <pubDate>Sun, 11 Aug 2019 22:30:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/2019/08/11/blog-build-introduction/</guid>
+      <description> 引言 为什么要搭建个人博客  有利于帮助自己思考，加深对技术的理解，在写博客的过程中提升技术使用熟练度。 提高自己的表达能力、归纳总结能力 （工作简历加分项）  介绍 常用博客搭建框架 根据搭建的博客是否有后台管理系统，将博客框架分为动态和静态两种。 实现一般的个人博客展示，搭建一个静态博客站点即可—— 首先相对轻量，其次有利于自己动手DIY。
+这些博客搭建平台，博主并没有一一实践过，所以只做粗略的介绍，感兴趣可以自己查看官网。
+WordPress 著名的动态博客搭建平台，搭建出的博客具有强大的后台管理系统，方便管理自己的博客。特点：↓↓↓
+ 入门使用成本低、但是定制的学习成本高（PHP大神除外）；对于MarkDown编辑的支持不行，虽然有插件，但是功能太弱。1
+ 官网：戳这里
+Hexo(推荐) 静态博客搭建平台之一，基于Node.js。Hexo官网上说的几个特点：
+  超快速度，渲染快 支持Markdown 一键部署 丰富的插件   等我尝试后再具体说说搭建的体验。(未来网的博客准备用Hexo搭建，这里埋个坑)。
+Hugo(推荐) 基于go语言实现的静态博客搭建平台，当前博客就是基于hugo搭建的，部署和DIY都比较简单，但是大致看了一下目前Hugo官网上的主题没有hexo多。个人体验，用官网的话来说：
+ 简单、易用、高效、易扩展、快速部署
+ jekyllrb 基于Ruby环境的静态博客搭建平台，官网：戳这里
+VuePress 新出的相对冷门的静态博客搭建平台，基于vue.js框架2。官网：VuePress官网
+Solo Java博客系统，官网：戳这里
+参考资料  博客搭建攻略(一)：平台选择[return] YouTube:程序猿如何搭建一个属于自己的博客 [return]   </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SS/SSR on SleepyXU.C Blog</title>
+    <link>https://2333174.github.io/tags/ss/ssr/</link>
+    <description>Recent content in SS/SSR on SleepyXU.C Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Aug 2019 19:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://2333174.github.io/tags/ss/ssr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>爱国上网指北之酸酸乳(待更新)</title>
+      <link>https://2333174.github.io/2019/08/09/ssr-try/</link>
+      <pubDate>Fri, 09 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>https://2333174.github.io/2019/08/09/ssr-try/</guid>
+      <description>介绍篇 爱国上网目前有VPN(维皮恩)、Shadowsocks(酸酸乳)两种比较主流的方式，这篇博客主要介绍酸酸乳这种方式(原因↓↓↓)，仅供个人学习！！！
+维皮恩和酸酸乳的区别  维皮恩的开发目的是给企业内网直接传输加密数据，最重要的就是安全性，而流量特征变得很明显，因此很容易被封。 酸酸乳是被设计来混淆数据，即专门用于爱国上网，增加墙检查出流量特征所需的计算量，提高实时检测和匹配的成本，而不是加密。  使用篇 ShadowsocksR客户端下载  Github下载地址
+ 酸酸乳客户端Windows版 酸酸乳客户端MAC版  百度云
+ 链接：酸酸乳客户端Windows版提取码：4dfw
+ 链接：酸酸乳客户端MAC版提取码：0ahb
+   ShadowsocksR客户端使用  解压压缩包，得到一下文件.任选一个可打开版本的应用程序打开.两个版本的功能是完全一样的，不同之处是根据你系统安装的 .NET Framework 支持库版本，这个支持库有v2.0 / 3.5 / 4.0 / 4.5版本。这里的 .NET Framework v2.0就是对应的 DotNet2.0 Shadowsocks客户端，v4.0则是对应 DotNet 4.0的。
+ 打开后，任务栏会出现一个小飞机。这时还不能使用，我们需要上网查找能用的ssr节点。
+ 浏览器下载地址：酸酸乳订阅源原地址 百度云下载地址：链接：酸酸乳订阅源百度云地址提取码：yhx9  解压文件 =&amp;gt; 打开docs文件夹 =&amp;gt; index.html =&amp;gt;打开后全是酸酸乳节点！！！！
+ 点击节点后的二维码 =&amp;gt; 右键单击任务栏小飞机图标(酸酸乳客户端) =&amp;gt; 点击二维码扫描 =&amp;gt;客户端左侧出现添加的节点
+ 再次右键单击任务栏小飞机图标 =&amp;gt;改变服务器切换为刚添加的代理服务器，设置系统代理模式为全局模式，代理规则为绕过局域网和大陆
+ 配置完成！！试试访问YouTubu, Get it ！！！</description>
+    </item>
+    
+  </channel>
+</rss>
